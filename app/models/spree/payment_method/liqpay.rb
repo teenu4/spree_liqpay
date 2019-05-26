@@ -1,6 +1,6 @@
 module Spree
   class PaymentMethod::Liqpay < PaymentMethod
-    preference :server, :string, default: 'https://www.liqpay.com'
+    preference :server, :string, default: 'https://www.liqpay.ua'
     preference :public_key, :string, default: ''
     preference :private_key, :string, default: ''
     preference :order_description, :string, default: -> {Spree::Store.current.name}
