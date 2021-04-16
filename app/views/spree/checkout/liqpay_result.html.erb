@@ -1,8 +1,15 @@
 <script>
-    $(function() {
-        setInterval(function(){
-            $.getJSON('<%= liqpay_status_order_checkout_url(@order, format: :json) %>', function(data) {
-                if (data.completed) location.reload();})}, 500)});
+  document.addEventListener("turbolinks:load", function () {
+    $(function () {
+      setInterval(function () {
+        $.getJSON('<%= liqpay_status_order_checkout_url(@order, format: :json) %>', function (data) {
+          if (data.completed)
+            location.reload();
+          }
+        )
+      }, 500)
+    });
+  });
 </script>
 <div id="liqpay_spinner">
   <!-- Here is the best place for some exciting animation -->
