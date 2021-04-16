@@ -1,4 +1,5 @@
 module Spree
+  module CheckoutControllerDecorator;end
   CheckoutController.class_eval do
     def liqpay_result
       update if has_completed_payments?
