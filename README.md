@@ -7,7 +7,7 @@
 Update your `Gemfile`:
 
 ```ruby
-gem 'spree_liqpay', github: 'kukareka/spree_liqpay'
+gem 'spree_liqpay', github: 'teenu4/spree_liqpay'
 ```
 
 Run `Bundler`:
